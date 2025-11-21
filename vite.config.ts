@@ -5,6 +5,8 @@ import react from '@vitejs/plugin-react';
 export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', '');
     return {
+      root: __dirname,
+      base: '/uv_mapping_clase_interactiva/',
       server: {
         port: 3000,
         host: '0.0.0.0',
